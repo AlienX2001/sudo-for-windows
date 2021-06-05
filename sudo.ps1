@@ -8,7 +8,7 @@ if ("$args.Count" -ge "0"){
     }
     elseif ($args[0] -eq "-admin"){
         $user=$args[1]
-        runas /user:$user "powershell.exe -c \"start-process PowerShell -verb runas\""
+        runas /user:$user "powershell.exe -c \"start-process PowerShell -verb runas""
     }
 }
 else {
